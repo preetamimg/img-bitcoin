@@ -1,6 +1,76 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
 // [data-page-name=example] {
   @include media-breakpoint(basic) {
+    .navbar {
+      z-index: 100;
+      & .navbar-brand {
+          height: 45px;
+          transition: all 0.3s;
+      }
+      .icone_list {
+          cursor: pointer;
+          transition: all ease-in-out 0.3s;
+          width: 28px;
+          & img {
+              filter: brightness(100);
+          }
+      }
+      & .navbar-nav {
+          & .nav-item {
+              & .nav-link {
+                  transition: all ease-in-out .3s;
+                  &::before{
+                      content: "";
+                      width: 0px;
+                      height: 1px;
+                      background: $theme1;
+                      position: absolute;
+                      left: 0px;
+                      top: 100%;
+                      transform: translate(-0%, -50%);
+                      transition: all ease-in-out .3s;
+                  }
+                  &::after{
+                      content: "";
+                      width: 0px;
+                      height: 1px;
+                      background: $theme1;
+                      position: absolute;
+                      right: 0px;
+                      top: 100%;
+                      transform: translate(-0%, -50%);
+                      transition: all ease-in-out .3s;
+                  }
+                  &:hover {
+                      color: $theme1 !important;
+                      &::before{
+                          width: 50%;
+                          left: 50%;
+                          
+                      }
+                      &::after {
+                          width: 50%;
+                          right: 50%;
+                      }
+                  }
+                  &.active{
+                      letter-spacing: 1px;
+                      color: $theme1 !important;
+                      &::before{
+                          width: 50%;
+                          left: 50%;
+                      }
+                      &::after {
+                          width: 50%;
+                          right: 50%;
+                      }
+                  }
+              }
+          }
+      }
+  
+  }
+  
   }
 
   // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -19,7 +89,22 @@
 
   @include media-breakpoint-down(xl) {}
 
-  @include media-breakpoint-down(lg) {}
+  @include media-breakpoint-down(lg) {
+    .navbar{
+      & .headerOffcanvas {
+        background-color: $black;
+        width: 300px !important;
+        & .offcanvas-header {
+          & .offcanvas-title {
+            height: 35px;
+          }
+          & .closeBtn {
+            width: 35px;
+          }
+        }
+      }
+    }
+  }
 
   @include media-breakpoint-down(md) {}
 

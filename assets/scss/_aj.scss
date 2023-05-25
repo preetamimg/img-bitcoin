@@ -1,16 +1,79 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
 // [data-page-name=example] {
     @include media-breakpoint(basic) {
+        // **** [ Hero Section ] *******
+        .heroSection {
+            background: linear-gradient(90deg, rgba($black, 0.5) 30%, rgba($black, 0.5) 100%), url(../img/hero_Bg.jpg) no-repeat, center;
+            background-size: cover;
+            & .innerSection {
+                & .coinImg {
+                    & img {
+                        animation: rotateAnimation 6s linear infinite;
+                    }
+                }
+            }
+        }
+        // **** [ Why Chose Use Section ] *******
+        .whyChoseSection {
+            & .innerSection {
+                & .cardSection {
+                    & .card{
+                            transition: all ease-in-out 0.3s;
+                        & .card-body{
+                            & .card-img {
+                                height: 70px;
+                                & img {
+                                    transition: all ease-in-out 0.3s;
+                                }
+                            }
+                            & .card-title{
+                                transition: all ease-in-out 0.3s;
+                            }
+                        }
+                        &:hover{
+                            transform: translateY(-10px);
+                            & .card-body{
+                                & .card-img {
+                                    & img {
+                                        filter: brightness(0);
+                                    }
+                                }
+                                & .card-title {
+                                    color: $theme1 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
     @include media-breakpoint-up(sm) {}
 
     @include media-breakpoint-up(md) {}
 
-    @include media-breakpoint-up(lg) {}
+    @include media-breakpoint-up(lg) {
+        .heroSection{
+            & .innerSection {
+                & .mainheading {
+                    font-size: 50px !important;
+                    
+                }
+            }
+        }
+    }
 
-    @include media-breakpoint-up(xl) {}
+    @include media-breakpoint-up(xl) {
+        .heroSection{
+            & .innerSection {
+                & .mainheading {
+                    font-size: 55px !important;
+                    
+                }
+            }
+        }
+    }
 
     @include media-breakpoint-up(xxl) {}
 
