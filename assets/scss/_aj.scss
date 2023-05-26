@@ -47,6 +47,50 @@
                 }
             }
         }
+
+        .investorsSection {
+            & .innerSection{
+                & .cardSection{
+                    & .card{
+                        transition: all ease-in-out 0.3s;
+                        border: 1px solid $theme2;
+                        & .card-body {
+                            & .cardImg{
+                                & .userImg {
+                                    width: 100px;
+                                    height: 100px;
+                                }
+                            }
+                            & .socialIcon {
+                                & .socillinks {
+                                    & li {
+                                        & a {
+                                            width: 35px;
+                                            height: 35px;
+                                            transition: all ease-in-out 0.3s;
+                                            background-color: $gray-300;
+                                            & img {
+                                            transition: all ease-in-out 0.3s;
+                                            }
+                                            &:hover {
+                                                background: $theme1 !important;
+                                                & img {
+                                                    filter: invert(1);
+                                                    transform: scale(1.1);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                            border-color: $theme1;
+                        }
+                    }
+                }
+            }
+        }
     }
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
     @include media-breakpoint-up(sm) {}
