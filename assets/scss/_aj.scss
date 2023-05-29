@@ -91,6 +91,55 @@
                 }
             }
         }
+
+        .stepCardSection {
+            & .innerSection {
+                & .stepCards {
+                    & .stepCard {
+                        position: relative;
+                        &::before{
+                            content: '';
+                            width: 100%;
+                            height: 35px;
+                            background: url(../img/icon/sideDotedImg.svg) no-repeat, center;
+                            position: absolute;
+                            background-size: cover;
+                            top: 35%;
+                            right: -50%;
+                            transform: translate(0%, -100%);
+                            z-index: 0;
+                        }
+                        & .card-body {
+                            position: relative;
+                            z-index: 1;
+                            & .innerbody {
+                                background-color: $gray-300;
+                                max-width: 150px;
+                                max-height: 150px;
+                                width: 100%;
+                                height: 100%;
+                                & .subInnerBody {
+                                    background-color: $gray-500;
+                                    & .iconImg {
+                                        width: 50px;
+                                        height: 50px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & > div {
+                        &:last-child{
+                            & .stepCard {
+                                &::before{
+                                display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
     @include media-breakpoint-up(sm) {}
@@ -107,6 +156,8 @@
             }
         }
     }
+
+
 
     @include media-breakpoint-up(xl) {
         .heroSection{
@@ -126,7 +177,27 @@
 
     @include media-breakpoint-down(xl) {}
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(lg) {
+        .stepCardSection {
+            & .innerSection {
+                & .stepCards {
+                    & .stepCard {
+                        &::before{
+                            display: none;
+                        }
+                        & .card-body {
+                            & .innerbody {
+                                & .subInnerBody {
+                                    & .iconImg {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     @include media-breakpoint-down(md) {}
 
