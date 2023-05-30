@@ -1,6 +1,73 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
 // [data-page-name=example] {
   @include media-breakpoint(basic) {
+    .footerSection {
+      // background-color: #000;
+      // background: linear-gradient(90deg, rgba($black, 0.8) 30%, rgba($black, 0.8) 100%),url(../img/footerImg.svg) no-repeat, center;
+      // background-size: contain;
+      & .inner_section {
+          & .footer_box {
+            & .footerlogo {
+              height: 40px;
+            }
+              & .inner_heading {
+                  & span {
+                      position: relative;
+                      &::before {
+                      content: "";
+                      width: 4px;
+                      height: 20px;
+                      background: $theme1;
+                      position: absolute;
+                      left: 0px;
+                      top: 50%;
+                      transform: translate(-0%, -50%);
+                      transition: all ease-in-out .3s;
+                      }
+                  }
+              }
+              & .contectDetails {
+                  transition: all 0.3s;
+                  &:hover {
+                      color: $theme1 !important;
+                  }
+              }
+              & .links_footer {
+                  & li {
+                      & a {
+                          transition: all ease-in-out 0.3s;
+                          position: relative;
+                          &::before{
+                              content: '';
+                              position: absolute;
+                              bottom: 0;
+                              left: 0px;
+                              width: 0px;
+                              height: 2px;
+                              background: $white;
+                              transition: all ease-in-out 0.3s;
+                          }
+                          &:hover {
+                              color: $theme1 !important;
+                              &:before {
+                                  width: 100%;
+                              }
+                          }
+                      }
+                  }
+              }
+              & .subscribeinput  {
+                  & .form-control {
+                      border-bottom: 2px solid $white !important;
+                  }
+              }
+          }
+          & .copyright {
+              border-top: 1px solid $white;
+          }
+  }
+  }
+  
   }
 
   // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
