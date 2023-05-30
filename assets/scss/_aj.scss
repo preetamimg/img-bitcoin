@@ -18,6 +18,7 @@
             & .innerSection {
                 & .cardSection {
                     & .card{
+                        border: 2px solid transparent !important;
                             transition: all ease-in-out 0.3s;
                         & .card-body{
                             & .card-img {
@@ -31,15 +32,16 @@
                             }
                         }
                         &:hover{
+                            border-color: $theme1 !important;
                             transform: translateY(-10px);
                             & .card-body{
                                 & .card-img {
                                     & img {
-                                        filter: brightness(0);
+                                        // filter: brightness(0);
                                     }
                                 }
                                 & .card-title {
-                                    color: $theme1 !important;
+                                    // color: $theme1 !important;
                                 }
                             }
                         }
@@ -48,6 +50,7 @@
             }
         }
 
+        // *** [ over Investor Section ] ********
         .investorsSection {
             & .innerSection{
                 & .cardSection{
@@ -92,6 +95,7 @@
             }
         }
 
+        // *** [ Easy Step Section ] ********
         .stepCardSection {
             & .innerSection {
                 & .stepCards {
@@ -140,6 +144,7 @@
                 }
             }
         }
+
     }
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
     @include media-breakpoint-up(sm) {}
