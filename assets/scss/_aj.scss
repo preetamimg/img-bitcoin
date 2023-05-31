@@ -18,7 +18,7 @@
             & .innerSection {
                 & .cardSection {
                     & .card{
-                        border: 2px solid transparent !important;
+                            border: 2px solid transparent !important;
                             transition: all ease-in-out 0.3s;
                         & .card-body{
                             & .card-img {
@@ -168,12 +168,27 @@
                 }
             }
         }
-        // // ** [ brandSection ] ***********
-        // .brandSection {
-        //     background: url(../img/brands.jpg)no-repeat, center;
-        //     background-size: cover;
-        // }
-
+        // !======== [ About Us Page Scss ] ===========
+        .bitcoinFeatures {
+            & .innerSection {
+                & .cardSection {
+                    & .card{
+                        overflow: hidden;
+                        transition: all 0.5s ease-out 0s;
+                        & .card-body{
+                            & .card-img {
+                                height: 70px;
+                            }
+                        }
+                        &:hover{
+                            z-index: 1;
+                            transform: scale(1.2);
+                            box-shadow: 0px 0px 50px 0px rgba($black, 0.1);
+                        }
+                    }
+                }
+            }
+        }
     }
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
     @include media-breakpoint-up(sm) {}
@@ -235,11 +250,60 @@
                 }
             }
         }
+        .whyChoseSection {
+            & .innerSection {
+                & .cardSection {
+                    & .card{
+                        & .card-body{
+                            & .card-img {
+                                height: 55px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //  ! About Pase
+        .bitcoinFeatures {
+            & .innerSection {
+                & .cardSection {
+                    & .card{
+                        & .card-body{
+                            & .card-img {
+                                height: 55px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
     }
 
-    @include media-breakpoint-down(md) {}
+    @include media-breakpoint-down(md) {
 
-    @include media-breakpoint-down(sm) {}
+    }
+
+    @include media-breakpoint-down(sm) {
+        //  ! About Pase
+        .bitcoinFeatures {
+            & .innerSection {
+                & .cardSection {
+                    & .card{
+                        box-shadow: 0px 0px 10px 0px rgba($black, 0.1);
+                        & .card-body{
+                            & .card-img {
+                            }
+                        }
+                        &:hover{
+                            z-index: 1;
+                            transform: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
 // }
 
 [data-bs-theme=dark] {

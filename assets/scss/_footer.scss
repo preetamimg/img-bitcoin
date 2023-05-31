@@ -1,127 +1,155 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
 // [data-page-name=example] {
-  @include media-breakpoint(basic) {
+@include media-breakpoint(basic) {
     .footerSection {
-      // background-color: #000;
-      // background: linear-gradient(90deg, rgba($black, 0.8) 30%, rgba($black, 0.8) 100%),url(../img/footerImg.svg) no-repeat, center;
-      // background-size: contain;
-      & .inner_section {
-          & .footer_box {
-            & .footerlogo {
-              height: 40px;
+        // background-color: #000;
+        // background: linear-gradient(90deg, rgba($black, 0.8) 30%, rgba($black, 0.8) 100%),url(../img/footerImg.svg) no-repeat, center;
+        // background-size: contain;
+        & .inner_section {
+            & .footer_box {
+                & .footerlogo {
+                    height: 40px;
+                }
+                & .inner_heading {
+                    & span {
+                        position: relative;
+                        &::before {
+                            content: "";
+                            width: 4px;
+                            height: 20px;
+                            background: $theme1;
+                            position: absolute;
+                            left: 0px;
+                            top: 50%;
+                            transform: translate(-0%, -50%);
+                            transition: all ease-in-out 0.3s;
+                        }
+                    }
+                }
+                & .contectDetails {
+                    transition: all 0.3s;
+                    &:hover {
+                        color: $theme1 !important;
+                    }
+                }
+                & .links_footer {
+                    & li {
+                        & a {
+                            transition: all ease-in-out 0.3s;
+                            position: relative;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                left: 0px;
+                                width: 0px;
+                                height: 2px;
+                                background: $white;
+                                transition: all ease-in-out 0.3s;
+                            }
+                            &:hover {
+                                color: $theme1 !important;
+                                &:before {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                & .subscribeinput {
+                    & .form-control {
+                        border-bottom: 2px solid $white !important;
+                    }
+                }
+                & .socialIcon {
+                    & .socillinks {
+                        & li {
+                            & a {
+                                width: 30px;
+                                height: 30px;
+                                transition: all ease-in-out 0.3s;
+                                background-color: $gray-300;
+                                & img {
+                                transition: all ease-in-out 0.3s;
+                                }
+                                &:hover {
+                                    background: $theme1 !important;
+                                    & img {
+                                        filter: invert(1);
+                                        transform: scale(1.1);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
-              & .inner_heading {
-                  & span {
-                      position: relative;
-                      &::before {
-                      content: "";
-                      width: 4px;
-                      height: 20px;
-                      background: $theme1;
-                      position: absolute;
-                      left: 0px;
-                      top: 50%;
-                      transform: translate(-0%, -50%);
-                      transition: all ease-in-out .3s;
-                      }
-                  }
-              }
-              & .contectDetails {
-                  transition: all 0.3s;
-                  &:hover {
-                      color: $theme1 !important;
-                  }
-              }
-              & .links_footer {
-                  & li {
-                      & a {
-                          transition: all ease-in-out 0.3s;
-                          position: relative;
-                          &::before{
-                              content: '';
-                              position: absolute;
-                              bottom: 0;
-                              left: 0px;
-                              width: 0px;
-                              height: 2px;
-                              background: $white;
-                              transition: all ease-in-out 0.3s;
-                          }
-                          &:hover {
-                              color: $theme1 !important;
-                              &:before {
-                                  width: 100%;
-                              }
-                          }
-                      }
-                  }
-              }
-              & .subscribeinput  {
-                  & .form-control {
-                      border-bottom: 2px solid $white !important;
-                  }
-              }
-          }
-          & .copyright {
-              border-top: 1px solid $white;
-          }
-  }
-  }
-  
-  }
+            & .copyright {
+                border-top: 1px solid $white;
+            }
+        }
+    }
+}
 
-  // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
-  @include media-breakpoint-up(sm) {}
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+@include media-breakpoint-up(sm) {
+}
 
-  @include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+}
 
-  @include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(lg) {
+}
 
-  @include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(xl) {
+}
 
-  @include media-breakpoint-up(xxl) {}
+@include media-breakpoint-up(xxl) {
+}
 
+@include media-breakpoint-down(xxl) {
+}
 
-  @include media-breakpoint-down(xxl) {}
+@include media-breakpoint-down(xl) {
+}
 
-  @include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(lg) {
+}
 
-  @include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(md) {
+}
 
-  @include media-breakpoint-down(md) {}
-
-  @include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(sm) {
+}
 // }
 
-[data-bs-theme=dark] {
-  // & [data-page-name=example] {
-      @include dark-media-breakpoint(basic) {
-          
-      }
-      // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
-      @include dark-media-breakpoint-up(sm) {
-      }
-      @include dark-media-breakpoint-up(md) {
-      }
-      @include dark-media-breakpoint-up(lg) {
-      }
-      @include dark-media-breakpoint-up(xl) {
-      }
-      @include dark-media-breakpoint-up(xxl) {
-      }
-  
-  
-      @include dark-media-breakpoint-down(xxl) {
-      }
-      @include dark-media-breakpoint-down(xl) {
-      }
-      @include dark-media-breakpoint-down(lg) {
-      }
-      @include dark-media-breakpoint-down(md) {
-      }
-      @include dark-media-breakpoint-down(sm) {
-      }
-  // }
+[data-bs-theme="dark"] {
+    // & [data-page-name=example] {
+    @include dark-media-breakpoint(basic) {
+    }
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include dark-media-breakpoint-up(sm) {
+    }
+    @include dark-media-breakpoint-up(md) {
+    }
+    @include dark-media-breakpoint-up(lg) {
+    }
+    @include dark-media-breakpoint-up(xl) {
+    }
+    @include dark-media-breakpoint-up(xxl) {
+    }
+
+    @include dark-media-breakpoint-down(xxl) {
+    }
+    @include dark-media-breakpoint-down(xl) {
+    }
+    @include dark-media-breakpoint-down(lg) {
+    }
+    @include dark-media-breakpoint-down(md) {
+    }
+    @include dark-media-breakpoint-down(sm) {
+    }
+    // }
 }
 
 // ! @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
