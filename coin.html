@@ -68,19 +68,16 @@
         <meta name="title" content="Home Page | websiteNameWillBeHere Website" />
         <meta name="description" content="This websiteNameWillBeHere website" />
         <meta name="keywords" content="educate" />
-
         <!-- Twitter Meta -->
         <meta name="twitter:title" content="Home Page | websiteNameWillBeHere Website">
         <meta name="twitter:description" content="This websiteNameWillBeHere website">
         <meta name="twitter:image" content="./assets/img/logo/favicon-32x32.png">
-
         <!-- Facebook Meta -->
         <meta property="og:url" content="">
         <meta property="og:title" content="Home Page | websiteNameWillBeHere Website">
         <meta property="og:description" content="This websiteNameWillBeHere website">
         <meta property="og:image" content="./assets/img/logo/favicon-32x32.png">
         <meta property="og:image:secure_url" content="./assets/img/logo/favicon-32x32.png">
-
         <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/logo/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/logo/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="194x194" href="./assets/img/logo/favicon-194x194.png">
@@ -90,18 +87,18 @@
         <link rel="mask-icon" href="./assets/img/logo/safari-pinned-tab.svg" color="#ff0000">
         <meta name="msapplication-TileColor" content="#b4111a">
         <meta name="theme-color" content="#ffffff">
-
         <meta name="classification" content="educate" />
         <link rel="canonical" href="" />
         <meta name="robots" content="noindex, nofollow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         
 
         <!-- style -->
+        <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/css/style.min.css" />
         <link rel="stylesheet" href="assets/libs/node_modules/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/libs/node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
 
-        <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
     </head>
     <body>
         <main class="container-fluid">
@@ -121,10 +118,10 @@
                                 </div>
                                 <div class="offcanvas-body">
                                     <ul class="navbar-nav mx-auto align-items-lg-center gap-3">
-                                        <li class="nav-item"><a class="nav-link position-relative lh-100 fs-16 fw-medium text-white active" aria-current="page" href="index.html">Home</a></li>
+                                        <li class="nav-item"><a class="nav-link position-relative lh-100 fs-16 fw-medium text-white" href="index.html">Home</a></li>
                                         <li class="nav-item"><a class="nav-link position-relative lh-100 fs-16 fw-medium text-white" href="aboutUs.html">About Us</a></li>
                                         <!-- <li class="nav-item"><a class="nav-link position-relative lh-100 fs-16 fw-medium text-white" href="javascript:;">Package</a></li> -->
-                                        <li class="nav-item"><a class="nav-link position-relative lh-100 fs-16 fw-medium text-white" href="coin.html">Coin</a></li>
+                                        <li class="nav-item"><a class="nav-link position-relative lh-100 fs-16 fw-medium text-white active" aria-current="page" href="coin.html">Coin</a></li>
                                         <li class="nav-item"><a class="nav-link position-relative lh-100 fs-16 fw-medium text-white" href="javascript:;">Blog</a></li>
                                         <li class="nav-item"><a class="nav-link position-relative lh-100 fs-16 fw-medium text-white" href="javascript:;">Contact Us</a></li>
                                     </ul>
@@ -137,113 +134,146 @@
                 </div>
                 <!-- !  Inner Body Content  -->
                 <div class="col-12 px-0 flex-fill bodyScrollPart" data-page-name="landing">
-                    <!-- * Hero Section Start -->
-                    <div class="container-fluid heroSection px-0 ">
-                        <div class="container innerSection py-4">
-                            <div class="row align-items-lg-center">
-                                <div class="col-xl-6 col-md-7 order-md-1 order-2 py-md-0 py-5">
-                                    <div class="row mx-0 g-lg-4 g-3 justify-content-center text-white">
-                                        <div class="col-12 subHeading fs-16"><span>Your Partner</span></div>
-                                        <div class="col-12 mainheading fs-1 fw-bolder lh-120">In <span class="text-theme1">Crypto</span> Currency <span class="text-theme1">&amp;</span> Transection</div>
-                                        <div class="col-12 fs-16 fw-light choices">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, cumque?</div>
-                                        <div class="col-12 px-0">
-                                            <div class="row mx-0 align-items-lg-center">
-                                                <div class="col-auto fw-bold fs-30 d-flex align-items-center">$8 908.00</div>
-                                                <div class="col"><a href="javascript:;" class="btn btn-outline-theme1 custom_btn custom_btn2 px-4 fs-16 text-decoration-none">By Now</a></div>
-                                            </div>
+                    <!-- * Top Breadcrumbs Sedction Start -->
+                    <div class="container-fluid topBreadcrumbSection walletbreadcrumb">
+                        <div class="container innerSection">
+                            <div class="row breadcrumbBox">
+                                <div class="col-12 fw-bold fs-1 text-md-start text-center lh-100 text-theme1 mb-4">Coin Wallet</div>
+                                <div class="col-12 breadcrumbs">
+                                    <nav class="d-flex justify-content-md-start justify-content-center ">
+                                        <ul class="m-0 d-flex align-items-center justify-content-center list-unstyled gap-3 px-4 py-2 position-relative">
+                                            <li class="fs-16"><a href="index.html" class="textwhite text-decoration-none">Home</a></li>
+                                            <li class="fs-16 active">Wallet</li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- * Top Breadcrumbs Sedction End -->
+
+                    <!-- * wallet Coin Section Start -->
+                    <div class="container-fluid py-5 walletCoinSection mt-lg-5">
+                        <div class="container innerSection">
+                            <div class="row g-4">
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="card box position-relative overflow-hidden border-0 rounded-0">
+                                        <div class="card-body position-relative text-center p-4">
+                                            <div class="cardTitle fw-medium fs-20 text-theme1">1 Bitcoin</div>
+                                            <div class="coinPrich fw-semibold fs-25 text-theme2 my-2">$1190</div>
+                                            <div class="cointitle fs-14 text-black mb-3">*YOU GET 1 BITCOIN*</div>
+                                            <a href="javascript:;" class="custom_btn px-4 btnstyle fs-16 text-decoration-none">Buy Coin</a>
                                         </div>
+                                        <span></span>
+                                        <span></span>
                                     </div>
                                 </div>
-                                <div class="col-xl-6 col-md-5 order-md-2 order-1">
-                                    <div class="coinImg"><img src="assets/img/bitcoinImg.png" class="w-100" alt="Coin"></div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="card box position-relative overflow-hidden border-0 rounded-0">
+                                        <div class="card-body position-relative text-center p-4">
+                                            <div class="cardTitle fw-medium fs-20 text-theme1">5 Bitcoin</div>
+                                            <div class="coinPrich fw-semibold fs-25 text-theme2 my-2">$2190</div>
+                                            <div class="cointitle fs-14 text-black mb-3">*YOU GET 2 BITCOIN*</div>
+                                            <a href="javascript:;" class="custom_btn px-4 btnstyle fs-16 text-decoration-none">Buy Coin</a>
+                                        </div>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="card box position-relative overflow-hidden border-0 rounded-0">
+                                        <div class="card-body position-relative text-center p-4">
+                                            <div class="cardTitle fw-medium fs-20 text-theme1">10 Bitcoin</div>
+                                            <div class="coinPrich fw-semibold fs-25 text-theme2 my-2">$3790</div>
+                                            <div class="cointitle fs-14 text-black mb-3">*YOU GET 5 BITCOIN*</div>
+                                            <a href="javascript:;" class="custom_btn px-4 btnstyle fs-16 text-decoration-none">Buy Coin</a>
+                                        </div>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="card box position-relative overflow-hidden border-0 rounded-0">
+                                        <div class="card-body position-relative text-center p-4">
+                                            <div class="cardTitle fw-medium fs-20 text-theme1">8 Bitcoin</div>
+                                            <div class="coinPrich fw-semibold fs-25 text-theme2 my-2">$3190</div>
+                                            <div class="cointitle fs-14 text-black mb-3">*YOU GET 2 BITCOIN*</div>
+                                            <a href="javascript:;" class="custom_btn px-4 btnstyle fs-16 text-decoration-none">Buy Coin</a>
+                                        </div>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- * Hero Section End -->
-                    <!-- * By Coin Section Start -->
-                    <div class="container-fluid my-5">
-                        <div class="container py-xl-5 py-lg-4 py-md-3">
-                            <div class="row justify-content-between">
-                                <div class="col-lg-6 order-lg-1 order-2">
-                                    <div class="subHeading fs-16 text-black fw-semibold"><span>By Coin</span></div>
-                                    <div class="fw-bold fs-30 lh-100 text-theme2 mt-md-3 mt-2">Buy and sell bitcoin — <br> it’s your <span class="fs-25 fst-italic text-theme1 fw-medium">easy way to profit</span></div>
-                                    <div class="fs-16 fw-medium text-black my-md-4 my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, inventore. Architecto cumque distinctio iusto odit vero fuga nihil possimus. Fugiat quos enim reprehenderit possimus ducimus iusto at, assumenda iste nam!</div>
-                                    <div class=""><a href="javascript:;" class="custom_btn px-4 btnstyle fs-16 text-decoration-none">Buy BitCoin</a></div>
-                                </div>
-                                <div class="col-lg-5 order-lg-2 order-1 mb-lg-0 mb-4">
-                                    <div class="coinImg"><img src="assets/img/bitcoinBy.jpg" class="w-100" alt=""></div>
-                                </div>
+                    <!-- * wallet Coin Section End -->
+                     <!-- * Brand Start -->
+                    <div class="container-fluid brandSection position-relative px-0  my-lg-5">
+                        <canvas id="stars" class="bgcanvas w-100 h-100 position-absolute"></canvas>
+                        <div class="container innerSection py-5">
+                            <div class="row owl-carousel brandSlider">
+                                <div class="item"><a href="javascript:;" class="brandImg d-flex"><img src="assets/img/brand1.png" class="h-100 w-100" alt=""></a></div>
+                                <div class="item"><a href="javascript:;" class="brandImg d-flex"><img src="assets/img/brand2.png" class="h-100 w-100" alt=""></a></div>
+                                <div class="item"><a href="javascript:;" class="brandImg d-flex"><img src="assets/img/brand3.png" class="h-100 w-100" alt=""></a></div>
+                                <div class="item"><a href="javascript:;" class="brandImg d-flex"><img src="assets/img/brand4.png" class="h-100 w-100" alt=""></a></div>
+                                <div class="item"><a href="javascript:;" class="brandImg d-flex"><img src="assets/img/brand1.png" class="h-100 w-100" alt=""></a></div>
+                                <div class="item"><a href="javascript:;" class="brandImg d-flex"><img src="assets/img/brand2.png" class="h-100 w-100" alt=""></a></div>
+                                <div class="item"><a href="javascript:;" class="brandImg d-flex"><img src="assets/img/brand3.png" class="h-100 w-100" alt=""></a></div>
+                                <div class="item"><a href="javascript:;" class="brandImg d-flex"><img src="assets/img/brand4.png" class="h-100 w-100" alt=""></a></div>
                             </div>
                         </div>
                     </div>
-                    <!-- * By Coin Section End -->
-                    <!-- * Why Chose Us Section Start -->
-                    <div class="container-fluid bg-black py-5 whyChoseSection">
+                    <!-- * Brand End -->
+                    
+                    <!-- * How To Work Wallet Section Start -->
+                    <div class="container-fluid py-5 howtoworkWallet">
                         <div class="container py-lg-4 py-md-3 innerSection">
                             <div class="row">
-                                <div class="col-12 subHeading fs-16 text-white fw-semibold text-center"><span>Why Chose Us</span></div>
-                                <div class="col-12 fw-bold fs-30 lh-100 text-white text-center my-md-3 my-2">Why our clients <span class="text-theme1">choose us</span></div>
-                                <div class="col-12 fs-16 fw-medium text-white  text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime perferendis, voluptatem <br> necessitatibus consequatur quidem nesciunt.</div>
-                                <div class="col-12 px-0 mt-5">
-                                    <div class="row mx-0 g-4 cardSection">
+                                <div class="col-12 subHeading fs-16 text-black fw-semibold text-center"><span>How To Work</span></div>
+                                <div class="col-12 fw-bold fs-30 lh-100 text-black text-center my-md-3 my-2">How it Work<span class="text-theme1">Wallet</span></div>
+                                <div class="col-12 fs-16 fw-medium text-black  text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque esse magnam ipsum nisi impedit beatae velit voluptate maxime. Laborum, ex.</div>
+                                <div class="col-12 px-0 mt-lg-5 mt-md-4 mt-3">
+                                    <div class="row mx-0 cardSection">
                                         <div class="col-lg-4 col-sm-6">
-                                            <div class="card h-100 border-0 rounded-3">
+                                            <div class="card h-100 border-0 rounded-3 position-relative">
                                                 <div class="card-body p-4">
-                                                    <div class="card-img text-center"><img src="assets/img/icon/cloud1.svg" class="h-100" alt="img"></div>
-                                                    <h5 class="card-title text-center py-3 m-0 fs-20 fw-bold text-black">Cloud mining</h5>
-                                                    <p class="card-text fs-16 lh-md text-black text-center text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, libero.</p>
-                                                    <div class="text-end"><a href="javascript:;" class="custom_btn px-4 btnstyle shadow-none fs-16 text-decoration-none">View Detail</a></div>
+                                                    <div class="innerBody d-flex align-items-center justify-content-center rounded-circle p-2 mx-auto">
+                                                        <div class="innerSubBody d-flex align-items-center justify-content-center rounded-circle bg-black w-100 h-100 p-4">
+                                                            <div class="formImg w-100 h-100"><img src="assets/img/icon/Edit.svg" class="w-100 h-100" alt=""></div>
+                                                        </div>
+                                                        <div class="numberofCard rounded-circle text-white fw-semibold d-flex justify-content-center align-items-center position-absolute bg-theme1">1</div>
+                                                    </div>
+                                                    <div class="cardtitle fs-25 fw-semibold text-theme1 text-center my-3">Fill Up Your Form</div>
+                                                    <div class="cardSubtitle fs-16 text-black text-center fw-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, doloribus unde cumque aspernatur cum similique.</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-sm-6">
-                                            <div class="card h-100 border-0 rounded-3">
+                                            <div class="card h-100 border-0 rounded-3 position-relative">
                                                 <div class="card-body p-4">
-                                                    <div class="card-img text-center"><img src="assets/img/icon/Profitable_exchange.svg" class="h-100" alt="img"></div>
-                                                    <h5 class="card-title text-center py-3 m-0 fs-20 fw-bold text-black">Profitable exchange</h5>
-                                                    <p class="card-text fs-16 lh-md text-black text-center text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, libero.</p>
-                                                    <div class="text-end"><a href="javascript:;" class="custom_btn px-4 btnstyle shadow-none fs-16 text-decoration-none">View Detail</a></div>
+                                                    <div class="innerBody d-flex align-items-center justify-content-center rounded-circle p-2 mx-auto">
+                                                        <div class="innerSubBody d-flex align-items-center justify-content-center rounded-circle bg-black w-100 h-100 p-4">
+                                                            <div class="formImg w-100 h-100"><img src="assets/img/icon/Payment_Method.svg" class="w-100 h-100" alt=""></div>
+                                                        </div>
+                                                        <div class="numberofCard rounded-circle text-white fw-semibold d-flex justify-content-center align-items-center position-absolute bg-theme1">2</div>
+                                                    </div>
+                                                    <div class="cardtitle fs-25 fw-semibold text-theme1 text-center my-3">Payment</div>
+                                                    <div class="cardSubtitle fs-16 text-black text-center fw-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, doloribus unde cumque aspernatur cum similique.</div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-sm-6">
-                                            <div class="card h-100 border-0 rounded-3">
+                                            <div class="card h-100 border-0 rounded-3 position-relative">
                                                 <div class="card-body p-4">
-                                                    <div class="card-img text-center"><img src="assets/img/icon/Stable_profit.svg" class="h-100" alt="img"></div>
-                                                    <h5 class="card-title text-center py-3 m-0 fs-20 fw-bold text-black">Stable profit</h5>
-                                                    <p class="card-text fs-16 lh-md text-black text-center text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, libero.</p>
-                                                    <div class="text-end"><a href="javascript:;" class="custom_btn px-4 btnstyle shadow-none fs-16 text-decoration-none">View Detail</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6">
-                                            <div class="card h-100 border-0 rounded-3">
-                                                <div class="card-body p-4">
-                                                    <div class="card-img text-center"><img src="assets/img/icon/Reliable_protection.svg" class="h-100" alt="img"></div>
-                                                    <h5 class="card-title text-center py-3 m-0 fs-20 fw-bold text-black">Reliable protection</h5>
-                                                    <p class="card-text fs-16 lh-md text-black text-center text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, libero.</p>
-                                                    <div class="text-end"><a href="javascript:;" class="custom_btn px-4 btnstyle shadow-none fs-16 text-decoration-none">View Detail</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6">
-                                            <div class="card h-100 border-0 rounded-3">
-                                                <div class="card-body p-4">
-                                                    <div class="card-img text-center"><img src="assets/img/icon/support.svg" class="h-100" alt="img"></div>
-                                                    <h5 class="card-title text-center py-3 m-0 fs-20 fw-bold text-black">Professional support</h5>
-                                                    <p class="card-text fs-16 lh-md text-black text-center text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, libero.</p>
-                                                    <div class="text-end"><a href="javascript:;" class="custom_btn px-4 btnstyle shadow-none fs-16 text-decoration-none">View Detail</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6">
-                                            <div class="card h-100 border-0 rounded-3">
-                                                <div class="card-body p-4">
-                                                    <div class="card-img text-center"><img src="assets/img/icon/commissions.svg" class="h-100" alt="img"></div>
-                                                    <h5 class="card-title text-center py-3 m-0 fs-20 fw-bold text-black">No hidden commissions</h5>
-                                                    <p class="card-text fs-16 lh-md text-black text-center text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, libero.</p>
-                                                    <div class="text-end"><a href="javascript:;" class="custom_btn px-4 btnstyle shadow-none fs-16 text-decoration-none">View Detail</a></div>
+                                                    <div class="innerBody d-flex align-items-center justify-content-center rounded-circle p-2 mx-auto">
+                                                        <div class="innerSubBody d-flex align-items-center justify-content-center rounded-circle bg-black w-100 h-100 p-4">
+                                                            <div class="formImg w-100 h-100"><img src="assets/img/icon/Cart.svg" class="w-100 h-100" alt=""></div>
+                                                        </div>
+                                                        <div class="numberofCard rounded-circle text-white fw-semibold d-flex justify-content-center align-items-center position-absolute bg-theme1">3</div>
+                                                    </div>
+                                                    <div class="cardtitle fs-25 fw-semibold text-theme1 text-center my-3">Buy or Sell Coin</div>
+                                                    <div class="cardSubtitle fs-16 text-black text-center fw-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, doloribus unde cumque aspernatur cum similique.</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -252,11 +282,50 @@
                             </div>
                         </div>
                     </div>
-                    <!-- * Why Chose Us Section End -->
-                    
+                    <!-- * How To Work Wallet Section End -->
+                    <!-- * Counter Section Start -->
+                    <div class="container-fluid counterSection py-5 my-lg-5">
+                        <div class="container innerSection">
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="card border-0 bg-transparent shadow-none text-center">
+                                        <div class="card-body">
+                                            <div class="cardTitle counters fs-1 fw-semibold  text-theme1">1524</div>
+                                            <div class="cardSubTitle fs-16 text-white text-uppercase">Crypto Currency</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="card border-0 bg-transparent shadow-none text-center">
+                                        <div class="card-body">
+                                            <div class="cardTitle counters fs-1 fw-semibold  text-theme1">4872</div>
+                                            <div class="cardSubTitle fs-16 text-white text-uppercase">HAPPY CLIENTS</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="card border-0 bg-transparent shadow-none text-center">
+                                        <div class="card-body">
+                                            <div class="cardTitle counters fs-1 fw-semibold  text-theme1">8314</div>
+                                            <div class="cardSubTitle fs-16 text-white text-uppercase">ACTIVE ACCOUNTS</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="card border-0 bg-transparent shadow-none text-center">
+                                        <div class="card-body">
+                                            <div class="cardTitle counters fs-1 fw-semibold  text-theme1">1742</div>
+                                            <div class="cardSubTitle fs-16 text-white text-uppercase">TOTAL RATES</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- * Counter Section End -->
                     <!-- * over Investor Section Start -->
                     <div class="container-fluid py-5 investorsSection">
-                        <div class="container py-lg-4 py-md-3 innerSection">
+                        <div class="container innerSection">
                             <div class="row">
                                 <div class="col-12 subHeading fs-16 text-black fw-semibold text-center"><span>Our client</span></div>
                                 <div class="col-12 fw-bold fs-30 lh-100 text-black text-center my-md-3 my-2">Our <span class="text-theme1">Investors</span></div>
@@ -278,6 +347,7 @@
                                                             <li><a href="javascript:;" class="text-decoration-none shadow-sm text-white mb-1 p-2 rounded-circle text-theme1 d-flex align-items-center justify-content-center"><img src="assets/img/icon/linkedin.svg" alt="" class="w-100 h-100"></a></li>
                                                         </ul>
                                                     </div>
+                                                    180010888
                                                 </div>
                                             </div>
                                         </div>
@@ -323,78 +393,6 @@
                         </div>
                     </div>
                     <!-- * over Investor Section End -->
-                    <!-- * Card Support Section Start -->
-                    <div class="container-fluid cardSupportSection bg-black py-5 my-lg-5">
-                        <div class="container innerSection py-lg-5 py-md-4">
-                            <div class="row justify-content-between align-items-center">
-                                <div class="col-lg-6 d-flex flex-column gap-md-4 gap-3 order-lg-1 order-2">
-                                    <div class="subHeading fs-16 text-white fw-semibold"><span>Multiple Currencies</span></div>
-                                    <div class="fw-bold fs-30 lh-100 text-white">This <span class="text-theme1">Multiple</span> Currencies</div>
-                                    <div class="subcontent text-white fs-16 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tempore nihil voluptate quos deserunt delectus ut quasi veniam voluptatem ducimus dolorem a distinctio, dolores fugit, consectetur facere aperiam in! Voluptatum molestiae eligendi minima sunt commodi deleniti officia illo ducimus architecto?</div>
-                                    <div class="subcontent text-white fs-16">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor placeat facere veritatis, assumenda minima dicta? Natus voluptate fugit amet debitis repellat itaque magnam! Molestias, ducimus.</div>
-                                    <div class=""><a href="javascript:;" class="btn btn-outline-theme1 custom_btn custom_btn2 px-4 fs-16 text-decoration-none">See All Carrencies</a></div>
-                                </div>
-                                <div class="col-lg-5 col-sm-8 col-10 mx-lg-0 mx-auto mb-lg-0 mb-5 order-lg-2 order-1">
-                                    <div class="carrencieImg"><img src="assets/img/user.png" class="w-100" alt=""></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- * Card Support Section End -->
-                    <!-- * Easy Step Section Start -->
-                    <div class="container-fluid py-5 stepCardSection">
-                        <div class="container innerSection ">
-                            <div class="row">
-                                <div class="col-12 text-center subHeading fs-16 text-black fw-semibold"><span>Easy Steps</span></div>
-                                <div class="col-12 text-center fw-bold fs-30 lh-100 text-theme2 mt-md-3 mt-2">3 easy steps to start — <br>  buying and selling  <span class="fs-25 fst-italic text-theme1 fw-medium">easy way to profit</span></div>
-                                <div class="col-12 px-0">
-                                    <div class="row mx-0 mt-5 stepCards">
-                                        <div class="col-lg-4 col-sm-6 mb-lg-0 mb-4">
-                                            <div class="stepCard h-100">
-                                                <div class="card-body text-center">
-                                                    <div class="innerbody rounded-circle p-lg-4 p-3 d-flex justify-content-center align-items-center shadow-sm mx-auto mb-3">
-                                                        <div class="subInnerBody rounded-circle p-lg-4 p-3 shadow-sm d-flex align-items-center justify-content-center">
-                                                            <div class="iconImg"><img src="assets/img/icon/bitcoinStep1.svg" class="w-100 h-100" alt=""></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cardTitle text-black fw-bold fs-20 mb-2"><span class="text-theme1">01.</span> Create your wallet </div>
-                                                    <div class="cardContent fs-14 text-black px-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae veritatis ducimus, repellendus quasi laborum.</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6 mb-lg-0 mb-4">
-                                            <div class="stepCard h-100">
-                                                <div class="card-body text-center">
-                                                    <div class="innerbody rounded-circle p-lg-4 p-3 d-flex justify-content-center align-items-center shadow-sm mx-auto mb-3">
-                                                        <div class="subInnerBody rounded-circle p-lg-4 p-3 shadow-sm d-flex align-items-center justify-content-center">
-                                                            <div class="iconImg"><img src="assets/img/icon/bitcoinStep2.svg" class="w-100 h-100" alt=""></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cardTitle text-black fw-bold fs-20 mb-2"><span class="text-theme1">02.</span>  Make payments  </div>
-                                                    <div class="cardContent fs-14 text-black px-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae veritatis ducimus, repellendus quasi laborum.</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-12 ">
-                                            <div class="stepCard h-100">
-                                                <div class="card-body text-center">
-                                                    <div class="innerbody rounded-circle p-lg-4 p-3 d-flex justify-content-center align-items-center shadow-sm mx-auto mb-3">
-                                                        <div class="subInnerBody rounded-circle p-lg-4 p-3 shadow-sm d-flex align-items-center justify-content-center">
-                                                            <div class="iconImg"><img src="assets/img/icon/bitcoinStep3.svg" class="w-100 h-100" alt=""></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cardTitle text-black fw-bold fs-20 mb-2"><span class="text-theme1">03.</span> Buy or sell bitcoins  </div>
-                                                    <div class="cardContent fs-14 text-black px-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae veritatis ducimus, repellendus quasi laborum.</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- * Easy Step Section End -->
-                    
                     <!-- * footer Start -->
                     <footer class="container-fluid mt-5 pt-5 pb-4 footerSection bg-black">
                         <div class="container inner_section">
@@ -467,43 +465,118 @@
 
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/node_modules/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/libs/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
         <script>
-            const swiper = new Swiper('.hero-swiper', {
-                // Optional parameters
-                // direction: 'vertical',
-                loop: true,
-                autoplay:true,
-                effect: "fade",
-
-                // If we need pagination
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
+            $('.brandSlider').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            dots:false,
+            autoplay: !0,
+            animateOut: "fadeOut",
+            animateIn: "fadeIn",
+            freeDrag: !1,
+            lazyLoad: !0,
+            autoplayTimeout: 2e3,
+            autoplayHoverPause: !0,
+            smartSpeed: 1200,
+            responsive:{
+                0:{
+                    items:2
                 },
-
-                // Navigation arrows
-                // navigation: {
-                //     nextEl: '.swiper-button-next',
-                //     prevEl: '.swiper-button-prev',
-                // },
-                navigation: false,
-
-                // And if we need scrollbar
-                scrollbar:false,
-                // scrollbar: {
-                //     el: '.swiper-scrollbar',
-                // },
-            });
+                600:{
+                    items:3
+                },
+                800:{
+                    items:4
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
         </script>
         <script>
-            $('.bodyScrollPart').scroll(function () {
-                var scroll = $('.bodyScrollPart').scrollTop();
-                if (scroll <= 120) {
-                    $(".topNavbar").removeClass("nav-active");
-                } else {
-                    $(".topNavbar").addClass("nav-active");
+           // DOM selectors
+            const stars = document.getElementById('stars');
+            const starsCtx = stars.getContext('2d');
+            const slider = document.querySelector(".slider input");
+            const output = document.querySelector("#speed");
+
+            // global variables
+            let screen, starsElements, starsParams = { speed: 4, number: 500, extinction: 4 };
+
+            // run stars
+            setupStars();
+            updateStars();
+
+            // handle slider
+            output.innerHTML = slider.value;
+            slider.oninput = function() {
+                output.innerHTML = this.value;
+                starsParams.speed = this.value;
+            };
+
+            // update stars on resize to keep them centered
+            window.onresize = function() {
+                setupStars();
+            };
+
+            // star constructor
+            function Star() {
+                this.x = Math.random() * stars.width;
+                this.y = Math.random() * stars.height;
+                this.z = Math.random() * stars.width;
+
+                this.move = function() {
+                    this.z -= starsParams.speed;
+                    if (this.z <= 0) {
+                        this.z = stars.width;
+                    }
+                };
+
+                this.show = function() {
+                    let x, y, rad, opacity;
+                    x = (this.x - screen.c[0]) * (stars.width / this.z);
+                    x = x + screen.c[0];
+                    y = (this.y - screen.c[1]) * (stars.width / this.z);
+                    y = y + screen.c[1];
+                    rad = stars.width / this.z;
+                    opacity = (rad > starsParams.extinction) ? 1.5 * (2 - rad / starsParams.extinction) : 1;
+
+                    starsCtx.beginPath();
+                    starsCtx.fillStyle = "rgba(255, 255, 255, " + opacity + ")";
+                    starsCtx.arc(x, y, rad, 0, Math.PI * 2);
+                    starsCtx.fill();
                 }
-            });
-        </script>
+            }
+
+            // setup <canvas>, create all the starts
+            function setupStars() {
+                screen = {
+                    w: window.innerWidth,
+                    h: window.innerHeight,
+                    c: [ window.innerWidth * 0.5, window.innerHeight * 0.5 ]
+                };
+                window.cancelAnimationFrame(updateStars);
+                stars.width = screen.w;
+                stars.height = screen.h;
+                starsElements = [];
+                for (let i = 0; i < starsParams.number; i++) {
+                    starsElements[i] = new Star();
+                }
+            }
+
+            // redraw the frame
+            function updateStars() {
+                starsCtx.fillStyle = "black";
+                starsCtx.fillRect(0, 0, stars.width, stars.height);
+                starsElements.forEach(function (s) {
+                    s.show();
+                    s.move();
+                });
+                window.requestAnimationFrame(updateStars);
+            }
+</script>
     </body>
 </html>

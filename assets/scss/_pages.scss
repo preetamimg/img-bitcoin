@@ -50,6 +50,9 @@
             background-position: top;
             
         }
+        &.walletbreadcrumb {
+            background-image: linear-gradient(90deg, rgba($black, 0.4) 30%, rgba($black, 0.4) 100%), url(../img/wallet.png);
+        }
     }
 }
 
