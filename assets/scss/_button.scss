@@ -49,6 +49,7 @@
         }
     }
     &.custom_btn2{
+        box-shadow: none;
         &:hover{
             color: $black !important;
         }

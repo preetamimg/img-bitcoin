@@ -317,6 +317,289 @@
                 }
             }
         }
+
+        // !========== [ Blog Page Scss ] ===========
+        // ****************Blog**************
+        .blogSection {
+            & .inner_section {
+            & .singalBlogmainImage{
+                    min-height: 250px;
+                & img {
+                    object-fit: cover;
+                }
+            }
+            & .filtersBtn {
+                z-index: 4;
+            }
+            & .leftSide {
+                & .teamCard {
+                    & .card {
+                        cursor: unset;
+                        & .card-body {
+                            transition: all ease-in-out 0.3s;
+                            position: relative;
+                            & .card-img-top {
+                                object-fit: cover;
+                                transition: all ease-in-out 3s;
+                            }
+                            & .icons {
+                                transform: translateY(-120%);
+                                top: 10px;
+                                right: 10px;
+                                transition: all ease-in-out 0.3s;
+                                z-index: 3;
+                            & .socillinkfooter {
+                                z-index: 2;
+                                & li {
+                                    & a {
+                                        background-color: $white;
+                                        width: 30px;
+                                        height: 30px;
+                                        margin: 0px !important;
+                                        transition: all ease-in-out 0.3s;
+                                        & img {
+                                            transition: all ease-in-out 0.3s;
+                                        }
+                                        &:hover{
+                                            background-color: $theme1;
+                                            & img {
+                                                filter: invert(1);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            }
+                        &:hover{
+                            & .card-img-top {
+                                transform: scale(1.1);
+                            }
+                            & .icons {
+                                transform: translateY(0);
+                            }
+                        }
+                        }
+                        & .innerBody {
+                            bottom: 14%;
+                            left: 0%;
+                            transition: all  ease-in-out 0.3s;
+                            & .blogLink {
+                                & .blogHeading {
+                                    transition: all  ease-in-out 0.3s;
+                                    &:hover{
+                                        color: $theme1 !important;
+                                    }
+                                }
+                            }
+                        
+                        }
+                        & .readmorebtnPrent {
+                        margin: -73px 0px 0px 0px;
+                        transition: all  ease-in-out 0.3s;
+                        z-index: 2;
+                        & .readMoreBtn  {
+                            color: $white !important;
+                        }
+                        }
+                        & .card-img-top {
+                        object-fit: cover;
+                        border-radius: 0px !important;
+                        }
+                    }
+                }
+                & .singalPostcommunicate {
+                & li {
+                    &::marker {
+                    color: $theme2 !important;
+                    font-size: 18px;
+                    }
+                }
+                }
+            }
+            & .rightSideBar {
+                & .sideBarCard {
+                & .card {
+                    box-shadow: 0px 0px 10px 0px rgba($black, 0.1);
+                    & .card-body {
+                    & .sideBarheading {
+                        display: inline-block;
+                        position: relative;
+                        font-weight: 600;
+                        letter-spacing: 1.5px;
+                        &::after{
+                            content: "";
+                            height: 2px;
+                            width: 30px;
+                            background: $theme1;
+                            position: absolute;
+                            bottom: -2px;
+                            left: 0;
+                            // transform: translate(-0%, -50%);
+                        }
+                    }
+                    & .input-group {
+                        & .form-control {
+                        background: transparent;
+                        border-bottom: 1px solid $theme2 !important;
+                            &:focus-visible{
+                            border-color: $theme1;
+                            }
+                            &::placeholder{
+                            color: rgba($black, 0.3);
+                            }
+                        }
+                        & .input-group-text {
+                        & .searchBtn {
+                            width: 32px;
+                            background: transparent !important;
+                            border-bottom: 1px solid $theme2 !important;
+                            & img {
+                            // filter: brightness(100);
+                            }
+                        }
+                        }
+                    }
+                    & .caregorie {
+                        & li {
+                        border-bottom: 0.6px solid rgba($black, 0.1);
+                        & .caregorieLink {
+                            transition: all ease-in-out 0.3s;
+                            &::before {
+                            content: '+';
+                            position: absolute;
+                            left: 0px;
+                            top: 0px;
+                            }
+                            &.active {
+                            color: $theme1 !important;
+                            letter-spacing: 1px;
+                            }
+                            &:hover {
+                            color: $theme1 !important;
+                            }
+                        }
+                        }
+                    }
+                    & .userPost {
+                        & .userImg {
+                        height: 80px;
+                        width: 80px;
+                        overflow: hidden;
+                        transition: all ease-in-out 0.3s;
+                        & img {
+                            object-fit: cover;
+                            transition: all ease-in-out 0.3s;
+                        }
+                        &::before {
+                            content: '';
+                            inset: 0;
+                            position: absolute;
+                            background-color: rgba($black, 0.3);
+                            opacity: 0;
+                            transition: all ease-in-out 0.3s;
+                        }
+                        &:hover {
+                            & img {
+                            transform: scale(1.1);
+                            }
+                            &::before {
+                            opacity: 1;
+                            z-index: 2;
+                            }
+                        }
+                        }
+                        & .postLink {
+                        transition: all ease-in-out 0.3s;
+                        &:hover {
+                            color: $theme1 !important;
+                        }
+                        }
+                    }
+                    & .tagsGroup {
+                        & .tagslink {
+                            border: 1px dashed $theme2;
+                            transition: all ease-in-out 0.3s;
+                            border-radius: 2px !important;
+                            & a {
+                            transition: all ease-in-out 0.3s;
+                            }
+                        &:hover {
+                            background-color: $theme2 !important;
+                            & a {
+                            color: $white !important;
+                            letter-spacing: 1px;
+                            }
+                        }
+                        }
+                    }
+                    & .contactBlog {
+                        & .iconImg {
+                        height: 30px;
+                        }
+                        & > div {
+                        &:first-child {
+                            padding: 0px !important;
+                        }
+                        }
+                        & .postLink {
+                        transition: all ease-in-out 0.3s;
+                        &:hover {
+                            color: $theme2 !important;
+                        }
+                        }
+                    }
+                    }
+                }
+                }
+            }
+            }
+        }
+
+        // *******************Pagination*******************
+        .pagination {
+            & .page-item {
+            & .page-link {
+                color: $black;
+                border: 0px;
+                border-radius: 0px;
+                width: 35px;
+                height: 35px;
+                transition: all ease-in-out 0.3s;
+                &.next {
+                width: auto;
+                }
+                &:hover {
+                background: $theme2;
+                color: $white;
+                }
+            }
+            &.active {
+                & .page-link{
+                color: $white;
+                background: $theme2;
+                border-color: $theme2;
+                }
+            }
+            }
+        }
+        .contactusPage {
+            & .innerSection {
+                & .mainCenterPart {
+                    & .notificationCard {
+                            background-color: rgba($black, 0.2);
+                            transition: all ease-in-out 0.3s;
+                            border: 2px solid $black;
+                            &:hover{
+                                border-color: $theme1;
+                            }
+                        & .contactImg {
+                            width: 32px;
+                            height: 32px;
+                        }
+                    }
+                }
+            }
+        }
     }
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
     @include media-breakpoint-up(sm) {}
