@@ -586,11 +586,13 @@
             & .innerSection {
                 & .mainCenterPart {
                     & .notificationCard {
-                            background-color: rgba($black, 0.2);
+                            // background-color: rgba($black, 0.2);
                             transition: all ease-in-out 0.3s;
-                            border: 2px solid $black;
+                            // border-bottom: 2px solid $black;
                             &:hover{
+                                box-shadow: 0 0.125rem 0.25rem rgba($black, 0.075) !important;
                                 border-color: $theme1;
+                                color: $theme1 !important;
                             }
                         & .contactImg {
                             width: 32px;
